@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 Formulario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form action="" method="get" id="form">
+
+        <main>
+
+            <header>FORMULÁRIO</header>
+
+            <section class="control">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="digite o seu nome" maxlength="80">
+                <small id="erroNome"></small>
+            </section>
+
+            <section>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
+                <small></small>
+            </section>
+
+            <section>
+                <label for="confirmarSenha">Confirmar Senha</label>
+                <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="confirme a sua senha">
+                <small></small>
+            </section>
+
+            <section>
+                <div id="escolha">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="masculino">
+
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="genero" id="feminino">
+
+                    <label for="outros">Outros</label>
+                    <input type="radio" name="genero" id="outros">
+                </div>
+                <small></small>
+            </section>
+
+            <section>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="digite o seu e-mail">
+                <small></small>
+            </section>
+
+            <section>
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone" placeholder="digite o seu numero de telefone" >
+                <small></small>
+            </section>
+
+            <section>
+                <label for="endereco">Endereço</label>
+                <textarea name="endereco" id="endereco" cols="30" rows="10" maxlength="200"
+                    placeholder="digite o seu endereço"></textarea>
+                    <small></small>
+            </section>
+
+            <section>
+                <label for="residencia">Tipo de Residência</label>
+                <select name="residencia" id="residencia">
+                    <option value="apartamento">Apartamento</option>
+                    <option value="casa">Casa</option>
+                </select>
+                <small></small>
+            </section>
+
+            <section>
+                <div id="select">
+                    <label for="contatoEmail">Forma de contato E-mail</label>
+                    <input type="checkbox" name="contatoEmail" id="contatoEmail" value="E-mail">
+                    <label for="contatoTelefone">Forma de contato Telefone</label>
+                    <input type="checkbox" name="contatoTelefone" id="contatoTelefone" value="Telefone">
+                </div>
+                <small></small>
+            </section>
+
+            <button type="submit">Enter</button>
+
+
+
+        </main>
+
+    </form>
+
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>
